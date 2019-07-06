@@ -22,7 +22,7 @@ public class MiniMapScript : MonoBehaviour
             newPosition.y = transform.position.y;
             transform.position = newPosition;
         }
-        //transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
+       
 
     }
 

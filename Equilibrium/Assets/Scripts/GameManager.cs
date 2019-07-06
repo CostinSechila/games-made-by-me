@@ -88,14 +88,9 @@ public class GameManager : MonoBehaviour
             { 
                 Instantiate(platform, SpawnPosX.transform.position + new Vector3(0f, yIncrement, 0f), Quaternion.identity);
                 yIncrement += 1.3f;
-                //MovingPlatform.CurrentPlatform.direction = 2;
+               
             }
-            //if (MovingPlatform.CurrentPlatform.direction == 2)
-            //{
-            //    Instantiate(platform, SpawnPosZ.transform.position + new Vector3(0f, yIncrement, 0f), Quaternion.identity);
-            //    yIncrement += 1.5f;
-            //    MovingPlatform.CurrentPlatform.direction = 1;
-            //}
+           
         }
     }
 

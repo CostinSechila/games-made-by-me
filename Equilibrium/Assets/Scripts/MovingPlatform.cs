@@ -9,15 +9,9 @@ public class MovingPlatform : MonoBehaviour
     private float moveSpeed = 10f;
 
     public static MovingPlatform CurrentPlatform { get; private set; }
-   // public static MovingPlatform LastPlatform { get;  set; }
-
-  
-
-    //public Text gameOver;
-    
+         
     public int direction = 1;
     
-
     public bool isGrounded = false;
     public bool hasFallen = false;
 
@@ -25,15 +19,7 @@ public class MovingPlatform : MonoBehaviour
     public bool hasReachedStart = true;
 
     public void OnEnable()
-    {
-        //if (LastPlatform == null)
-        //{
-        //    LastPlatform = GameObject.Find("cube").GetComponent<MovingPlatform>();
-        //}
-        //else
-        //{
-        //    lastplatform = currentplatform;
-        //}
+    {       
         CurrentPlatform = this;
     }
     
@@ -45,8 +31,6 @@ public class MovingPlatform : MonoBehaviour
     void Update()
     {
         Move();
-       // SpawnPlatform();
-
     }
 
 
@@ -117,28 +101,7 @@ public class MovingPlatform : MonoBehaviour
             }
         }
         
-        //if (direction == 2)
-        //{
-        //    if (hasReachedEnd == false && hasReachedStart == true)
-        //    {
-
-        //        transform.position += new Vector3(0f, 0f, 1f) * Time.deltaTime * moveSpeed;
-        //        if (CurrentPlatform.transform.position.z <= -15)
-        //        {
-        //            hasReachedEnd = true;
-        //            hasReachedStart = false;
-        //        }
-        //    }
-        //    if (hasReachedStart == false && hasReachedEnd == true)
-        //    {
-        //        transform.position -= new Vector3(0f, 0f, 1f) * Time.deltaTime * moveSpeed;
-        //        if (CurrentPlatform.transform.position.z >= 15)
-        //        {
-        //            hasReachedStart = true;
-        //            hasReachedEnd = false;
-        //        }
-        //    }
-        //}
+       
     }
 
 

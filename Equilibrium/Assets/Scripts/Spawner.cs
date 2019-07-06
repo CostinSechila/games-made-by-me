@@ -78,8 +78,5 @@ public class Spawner : MonoBehaviour
         YIncrement++;
 
     }
-    //spawn piece 
-
-    //move 
 
 }
